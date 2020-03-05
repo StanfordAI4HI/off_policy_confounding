@@ -1,10 +1,10 @@
 ## Off-policy Policy Evaluation Under Unobserved Confounding
 This repository contains all the code necessary to replicate the results of the paper "Off-policy Policy Evaluation Under Unobserved Confounding". 
 
-First make sure the rquirements are setup, `pip install -r requirements.txt`
+This code runs with Python 3.7. Install requirements with `pip install -r requirements.txt`, or with `conda`. 
 
 ### autism
-Directory `autism` contains the code for Autism SMART trial experiment. `Autism.ipynb` is a notebook that generates the data for Case I and Case II of this experiment. This simulator is adopted from [Comparing Dynamic Treatment Regimes Using Repeated-Measures Outcomes: Modeling Considerations in SMART Studies](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4876020/) Appendix B.
+Directory `autism` contains the code for Autism SMART trial experiment. `Autism.ipynb` is a notebook that generates the data for Case I, Case II and design sensitivity of this experiment. The simulator is adopted from [Comparing Dynamic Treatment Regimes Using Repeated-Measures Outcomes: Modeling Considerations in SMART Studies](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4876020/) Appendix B.
 
 ### sepsis
 The directory `sepsis` containts the code for the patinet sepsis experiments. The simulator is borrowed from [Oberst, Sontag](https://github.com/clinicalml/gumbel-max-scm). The directory contains
