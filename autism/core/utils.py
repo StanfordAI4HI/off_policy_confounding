@@ -139,11 +139,11 @@ def plot_autism_design_sensitivity(data, title='', fontsize=30,
 
     plt.plot(data['Gammas'], aac, '-o', color = 'black', 
                 markersize=markersize, label='AAC (True)', linewidth=linewidth)
-    plt.plot(data['Gammas'], adaptive, '-p', color = 'green', 
-                markersize=markersize, label='BLI + AAC (True)', linewidth=linewidth)
-    plt.plot(data['Gammas'], data['our'], '-.p', color = 'blue', 
+    plt.plot(data['Gammas'], adaptive, '-*', color = 'black', 
+                markersize=markersize/fontscale, label='BLI + AAC (True)', linewidth=linewidth)
+    plt.plot(data['Gammas'], data['our'], '-.X', color = 'black', 
                 markersize=markersize, label='BLI + AAC (Ours)', linewidth=linewidth)
-    plt.plot(data['Gammas'], data['naive'], '-.p', color = 'red', 
+    plt.plot(data['Gammas'], data['naive'], '-.P', color = 'black', 
                 markersize=markersize, label='BLI + AAC (Naive)', linewidth=linewidth)
     
     ymax = data['adaptive'] + 2.0
